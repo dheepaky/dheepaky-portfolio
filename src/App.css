@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+header ul li {
+  @apply px-2;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-primary {
+  background: #edf9fe;
+}
+.text-main {
+  color: #040033;
+}
+.desktop a:hover {
+  background: #aee7e2;
+}
+.desktop a {
+  @apply px-8 py-4;
+  font-size: 17px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: dashed;
+}
+
+.bg-secondary {
+  background: #edf9fe;
+}
+
+.mobile-nav {
+  @apply fixed  top-20 bg-[#edf9fe] z-50 w-1/2 h-full;
+}
+.mobile-nav li {
+  @apply p-5 border-b-2 border-[#e2eceb];
+}
+.mobile-nav a {
+  @apply py-4;
+  padding-inline: 1.8rem;
+}
+.mobile-nav a:hover {
+  background: #c1f0ed;
+  transition: 0.4s;
+}
