@@ -6,10 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [tailwindcss(), react()],
   server: {
-    allowedHosts: [
-      "localhost",
-      "127.0.0.1",
-      "glad-linell-autorobot-8a3b7f05.koyeb.app",
-    ],
+    allowedHosts: ["dheepaky-portfolio.koyeb.app"],
   },
 });
