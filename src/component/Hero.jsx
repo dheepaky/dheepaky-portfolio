@@ -1,21 +1,53 @@
+import { Link, Element } from "react-scroll";
 export default function Hero() {
   return (
-    <section className="">
-      <ul className="mt-20 py-1 justify-center flex">
-        <li>
-          <img className="flex" src="/512.gif" width="45" height="45" />
-        </li>
-        <li className="space-x-10">
-          <span className="text-main text-3xl mt-40 font-semibold">Hi,</span>
-        </li>
-      </ul>
-      <h1 className="text-main text-center text-3xl py-3">I'm DEEPAK</h1>
+    <section className=" flex flex-col text-main md:flex-row items-center justify-center px-4 md:px-10">
+      {/* Left Side */}
+      <div className="w-full md:w-1/2 text-center md:text-left  md:ml-36">
+        <ul className="mt-5 py-1 flex items-center justify-center md:justify-start">
+          <img src="/512.gif" width="45" height="45" alt="wave" />
+          <li className="md:ml-4 ml-2">
+            <span className="text-main md:text-4xl text-2xl font-highlight">
+              Hi,
+            </span>
+          </li>
+        </ul>
+        <h1 className="text-main text-2xl md:text-4xl py-3 md:-ml-3 font-highlight">
+          I'm Deepak
+        </h1>
+        <div className="flex justify-center md:justify-start mt-2 md:-ml-24  ">
+          <img src="type.svg" alt="Typing SVG" />
+        </div>
+        <p className="flex justify-center md:text-2xl text-[20px] py-5 md:-ml-36 ">
+          A Passionate Fullstack Developer crafting responsive, scalable web
+          experiences with clean code and seamless functionality.
+        </p>
+        <div className="flex md:justify-start gap-5 py-5 justify-center">
+          <a href="mailto:deepakk300712@gmail.com">
+            <img src="mail.svg" alt="mail" className="w-10 h-10" />
+          </a>
+          <a href="https://github.com/dheepaky">
+            <img src="github.svg" alt="github" className="w-10 h-10" />
+          </a>
+          <a href="https://www.linkedin.com/in/dheepaky">
+            <img src="linkedin.svg" alt="linkedin" className="w-10 h-10" />
+          </a>
+        </div>
+        <div className="flex  gap-7 md:justify-start justify-center md:py-5 md:text-2xl text-[20px]  md:-ml-30 ">
+          <button className="border-2 md:w-40 w-32 bordergradiant  rounded-2xl cursor-pointer hover:bg-cyan-100">
+            <Link to="contact" smooth={true} duration={500}>
+              <a>Contact Me</a>
+            </Link>
+          </button>
+          <button className="border-2 md:w-40 w-32 bordergradiant rounded-2xl cursor-pointer hover:bg-cyan-100">
+            Resume
+          </button>
+        </div>
+      </div>
 
-      <div className="justify-self-center">
-        <img
-          src="https://readme-typing-svg.demolab.com?font=Bungee+Spice&size=27&letterSpacing=0.5px&duration=5013&pause=800&color=00000&background=fffff&vCenter=true&random=true&width=324&height=40&lines=I'm+A+Web+Developer;I'm+A+Web+Designer"
-          alt="Typing SVG"
-        />
+      {/* Right Side */}
+      <div className="w-full md:w-1/2 mt-6 md:mt-0">
+        <img src="pic.png" alt="" />
       </div>
     </section>
   );
