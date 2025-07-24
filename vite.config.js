@@ -6,6 +6,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [tailwindcss(), react()],
   server: {
-    allowedHosts: ["localhost", "127.0.0.1", "dheepaky-portfolio.koyeb.app"],
+    allowedHosts: [
+      "localhost",
+      "127.0.0.1",
+      "cute-trix-autorobot-37181c91.koyeb.app",
+    ],
   },
 });
