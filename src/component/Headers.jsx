@@ -6,9 +6,9 @@ export default function Header() {
 
   return (
     <section className="scroll-smooth">
-      <header className="flex justify-between  py-8 tracking-wide bg-primary">
-        <a className="font-bold text-main ml-5" href="#">
-          Dheepaky
+      <header className="flex justify-between py-8 tracking-wide bg-primary">
+        <a className="font-bold text-main ml-5 " href="/">
+          <img src="/lg.png" alt="" className="h-[30px] w-[30px] " />
         </a>
         <nav className="hidden md:block  ">
           <ul className="flex text-main space-x-3 desktop ">
@@ -17,23 +17,26 @@ export default function Header() {
             </li>
             <li>
               <Link to="project" smooth={true} duration={500}>
-                <a>Projects</a>
+                Projects
               </Link>
             </li>
             <li>
               <Link to="education" smooth={true} duration={500}>
-                <a>Education</a>
+                Education
               </Link>
             </li>
             <li>
               <Link to="contact" smooth={true} duration={500}>
-                <a>Contact</a>
+                Contact
               </Link>
             </li>
             <li>
-              <Link to="resume" smooth={true} duration={500}>
-                <a href="#resume">Resume</a>
-              </Link>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1Q5KN3O8DE4fyOC4fGzZBeGf0d0wzxABj/view">
+                Resume
+              </a>
             </li>
           </ul>
         </nav>
@@ -46,7 +49,7 @@ export default function Header() {
 
         {/* Slide-in Sidebar Menu */}
         <div
-          className={`fixed mobile-nav  block md:hidden right-0 w-64 bg-primary text-main z-50 shadow-lg transform transition-transform duration-300 ease-in-out
+          className={`fixed mobile-nav   block md:hidden right-0 w-64 bg-primary text-main z-50 shadow-lg transform transition-transform duration-300 ease-in-out
           ${toggleMenu ? "translate-x-0" : "translate-x-full"}
         `}>
           <ul className="text-hover  ">
@@ -63,14 +66,19 @@ export default function Header() {
               <a href="/#contact">Contact</a>
             </li>
             <li>
-              <a href="/#resume">Resume</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1Q5KN3O8DE4fyOC4fGzZBeGf0d0wzxABj/view">
+                Resume
+              </a>
             </li>
           </ul>
         </div>
 
         <button
           onClick={() => setToggleMenu(!toggleMenu)}
-          className="block md:hidden relative w-6 h-6 z-50 group cursor-pointer ">
+          className="block md:hidden relative w-6 h-6 z-50 group cursor-pointer mr-2">
           <span
             className={`block absolute h-0.5 w-6 bg-[#0a0a0a] transform transition duration-300 ease-in-out
       ${toggleMenu ? "rotate-45 top-3.5" : "top-2"}`}

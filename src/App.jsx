@@ -8,6 +8,7 @@ import Projects from "./component/Projects";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import ScrollTopButton from "./component/ScrollTopButton";
+import Certification from "./component/Certification";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Projects />
 
       <Education />
+      <Certification />
       <Contact />
       <Footer />
       <ScrollTopButton />

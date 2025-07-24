@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 
 export default function Education() {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0, transition: { duration: 0.7 } },
@@ -14,7 +14,7 @@ export default function Education() {
   };
   const fadeUp3 = {
     hidden: { opacity: 0, x: -340 },
-    show: { opacity: 1, x: 0, transition: { duration: 2 } },
+    show: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
   return (
     <section id="education" className="mt-56 px-2  ">
@@ -41,7 +41,7 @@ export default function Education() {
                   alt=""
                   className="md:w-14 md:h-14 w-12 h-12 "
                 />
-                <h1 className="md:text-2xl text-[17px]  font-bold text-main md:mr-56">
+                <h1 className="md:text-2xl text-[17px] text-main font-bold text-main md:mr-56">
                   Master of Computer Applications (MCA)
                 </h1>
                 <p className="text-sm  text-gray-700 mt-2 md:mr-2 md:text-right">
@@ -83,7 +83,7 @@ export default function Education() {
                   alt=""
                   className="md:w-14 md:h-14 w-12 h-12 "
                 />
-                <h1 className="md:text-2xl text-[17px]  font-bold text-main md:mr-56">
+                <h1 className="md:text-2xl text-[17px] text-main font-bold text-main md:mr-56">
                   Bachelor of Computer Applications (BCA)
                 </h1>
                 <p className="text-sm  text-gray-700 mt-2 md:mr-2 md:text-right">
@@ -105,7 +105,9 @@ export default function Education() {
         {/* 2 */}
       </div>
 
-      <h2 className="text-2xl font-bold mb-4 font-head text-center py-7">
+      {/*  */}
+      {/* languages & Tools */}
+      <h2 className="text-2xl font-bold mb-4 font-head text-center py-10">
         Languages & Tools
       </h2>
       <motion.div
@@ -114,71 +116,23 @@ export default function Education() {
         initial="hidden"
         animate={isInView ? "show" : "hidden"}>
         <div className="flex flex-wrap ml-4 gap-4 md:gap-6 py-5 justify-center mx-auto">
+          <img src="/icon/html.svg" alt="HTML" className="w-12 h-12" />
+          <img src="/icon/css.svg" alt="CSS" className="w-12 h-12" />
+          <img src="/icon/js.svg" alt="JavaScript" className="w-12 h-12" />
           <img
-            src="https://skillicons.dev/icons?i=html"
-            alt="HTML"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=css"
-            alt="CSS"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=js"
-            alt="JavaScript"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=tailwind"
+            src="/icon/tailwind.svg"
             alt="Tailwind CSS"
             className="w-12 h-12"
           />
-          <img
-            src="https://skillicons.dev/icons?i=py"
-            alt="Python"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=react"
-            alt="React"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=nodejs"
-            alt="Node.js"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=express"
-            alt="Express"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=mongodb"
-            alt="MongoDB"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=docker"
-            alt="Docker"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://skillicons.dev/icons?i=php"
-            alt="PHP"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-            alt="MySQL"
-            className="w-12 h-12"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
-            alt="Blender"
-            className="w-12 h-12"
-          />
+          <img src="/icon/python.svg" alt="Python" className="w-12 h-12" />
+          <img src="/icon/react.svg" alt="React" className="w-12 h-12" />
+          <img src="/icon/node.svg" alt="Node.js" className="w-12 h-12" />
+          <img src="/icon/express.svg" alt="Express" className="w-12 h-12" />
+          <img src="/icon/mongodb.svg" alt="MongoDB" className="w-12 h-12" />
+          <img src="/icon/docker.svg" alt="Docker" className="w-12 h-12" />
+          <img src="/icon/php.svg" alt="PHP" className="w-12 h-12" />
+          <img src="/icon/mysql.svg" alt="MySQL" className="w-12 h-12" />
+          <img src="/icon/blender.svg" alt="Blender" className="w-12 h-12" />
         </div>
       </motion.div>
     </section>

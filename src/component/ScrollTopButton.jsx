@@ -7,7 +7,7 @@ export default function ScrollTopButton() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowTopBtn(window.scrollY > 16000000000);
+      setShowTopBtn(window.scrollY > 60);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
