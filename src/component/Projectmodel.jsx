@@ -4,7 +4,7 @@ const Projectmodel = ({ project, onClose }) => {
     <section>
       <div className="fixed inset-0 z-50 bg-black bg-opacity-20 backdrop-blur-sm flex justify-center items-center px-4">
         <div className="bg-white rounded-xl max-w-xl w-full relative">
-          <img src={project.gif} className="w-full h-70 object-cover" />
+          <img src={project.gif} className="object-cover" />
           <button
             onClick={onClose}
             className="absolute top-3 right-3 bg-black text-white rounded-full w-8 h-8 text-lg flex justify-center items-center hover:bg-red-600">
