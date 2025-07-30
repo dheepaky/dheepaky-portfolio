@@ -8,6 +8,11 @@ body {
   font-family: "Poppins_7df6af, __Poppins_Fallback_7df6af";
   font-weight: 500;
   background: #edf9fe;
+  /*  */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .bg-primary {
