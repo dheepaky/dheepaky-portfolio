@@ -13,7 +13,7 @@ export default function Header() {
         <nav className="hidden md:block  ">
           <ul className="flex text-main space-x-3 desktop ">
             <li>
-              <a href="/">Home</a>
+              <a href="about">About</a>
             </li>
             <li>
               <Link to="project" smooth={true} duration={500}>
@@ -34,7 +34,7 @@ export default function Header() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1Q5KN3O8DE4fyOC4fGzZBeGf0d0wzxABj/view">
+                href="https://drive.google.com/file/d/1Rz2joBgUCr3NezmRdFN2y1Xiv-dYH5Xa/view">
                 Resume
               </a>
             </li>
@@ -54,7 +54,7 @@ export default function Header() {
         `}>
           <ul className="text-hover  ">
             <li>
-              <a href="/">Home</a>
+              <a href="/">About</a>
             </li>
             <li>
               <a href="/#project">Projects</a>
@@ -69,7 +69,7 @@ export default function Header() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1Q5KN3O8DE4fyOC4fGzZBeGf0d0wzxABj/view">
+                href="https://drive.google.com/file/d/1Rz2joBgUCr3NezmRdFN2y1Xiv-dYH5Xa/view">
                 Resume
               </a>
             </li>

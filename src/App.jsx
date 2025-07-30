@@ -9,6 +9,7 @@ import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import ScrollTopButton from "./component/ScrollTopButton";
 import Certification from "./component/Certification";
+import Experience from "./component/Experience";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Projects />
 
       <Education />
+      <Experience />
       <Certification />
       <Contact />
       <Footer />

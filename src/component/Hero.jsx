@@ -1,7 +1,9 @@
 import { Link, Element } from "react-scroll";
 export default function Hero() {
   return (
-    <section className=" flex flex-col text-main md:flex-row items-center justify-center px-4 md:px-10">
+    <section
+      id="about"
+      className=" flex flex-col text-main md:flex-row items-center justify-center px-4 md:px-10">
       {/* Left Side */}
       <div className="w-full md:w-1/2 text-center md:text-left  md:ml-36">
         <ul className="mt-5 py-1 flex items-center justify-center md:justify-start">
@@ -33,20 +35,20 @@ export default function Hero() {
             <img src="linkedin.svg" alt="linkedin" className="w-10 h-10" />
           </a>
         </div>
-        <div className="flex  gap-7 md:justify-start justify-center md:py-5 md:text-2xl text-[20px]  md:-ml-30 ">
-          <button className="border-2 md:w-40 w-32 bordergradiant  rounded-2xl cursor-pointer hover:bg-cyan-100">
+        <div className="flex  md:gap-20 gap-5 md:justify-start justify-center md:py-5 md:text-xl text-[15px]  md:-ml-30 ">
+          <a className=" borderstyle md:w-40 w-32 cursor-pointer  rounded-3xl">
             <Link to="contact" smooth={true} duration={500}>
-              Contact Me
+              <span>Contact Me</span>
             </Link>
-          </button>
-          <button className="border-2 md:w-40 w-32 bordergradiant rounded-2xl cursor-pointer ">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1Q5KN3O8DE4fyOC4fGzZBeGf0d0wzxABj/view">
-              Resume
-            </a>
-          </button>
+          </a>
+
+          <a
+            className=" borderstyle md:w-40 w-32  rounded-3xl"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1Rz2joBgUCr3NezmRdFN2y1Xiv-dYH5Xa/view">
+            <span>Resume</span>
+          </a>
         </div>
       </div>
 

@@ -39,20 +39,20 @@ export default function Education() {
                 <img
                   src="/vhnsnc.png"
                   alt=""
-                  className="md:w-14 md:h-14 w-12 h-12 "
+                  className="md:w-14 md:h-14 w-10 h-10 "
                 />
-                <h1 className="md:text-2xl text-[17px] text-main font-bold text-main md:mr-56">
+                <h1 className="md:text-2xl text-[15px] w-50 md:w-fit px-2 text-main font-bold text-main md:mr-56">
                   Master of Computer Applications (MCA)
                 </h1>
-                <p className="text-sm  text-gray-700 mt-2 md:mr-2 md:text-right">
+                <p className="md:text-sm  text-[12px] text-gray-700 mt-2 md:mr-2 md:text-right">
                   2023 – 2025
                 </p>
               </div>
               <div className="flex md:justify-between md:mb-10">
-                <p className="text-gray-700 md:ml-20 text-center ml-5">
+                <p className="text-gray-700 md:ml-20 text-center md:w-fit w-47 ml-5 ">
                   V.H.N.S.N. College, Virudhunagar
                 </p>
-                <p className="text-green-500 font-bold text-center p-1 px-4 ml-2 md:ml-20  bg-green-100 rounded-2xl shadow-emerald-500 ">
+                <p className="text-green-500 px-1 md:text-[16px] h-7 text-[12px] font-bold text-center  p-1 md:px-4 ml-2 md:ml-20  bg-green-100 rounded-2xl shadow-emerald-500 ">
                   Grade: 76%
                 </p>
               </div>
@@ -63,38 +63,38 @@ export default function Education() {
         {/* 2 */}
       </div>
 
-      <div className="relative mx-auto md:max-w-4xl md:px-4 py-4">
+      <div className="relative mx-auto md:max-w-4xl md:px-4 py-7 ">
         {/* Vertical line */}
         <div className="absolute md:left-6.5 left-1 top-0 bottom-0 w-[2px] bg-gray-300 rounded"></div>
 
         <div className="relative  items-start mb-12 md:pl-12 pl-2">
           {/* Dot */}
           <div className="absolute left-[0.3px] md:left-1 top-1 md:w-4 md:h-4 w-3 h-3 bg-green-500 glow border-2 border-white rounded-full"></div>
+          {/* Content 1*/}
           <motion.div
             ref={ref}
-            variants={fadeUp2}
+            variants={fadeUp}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}>
-            {/* Content 1*/}
             <div className="rounded-2xl bg-gray-200 p-2">
               <div className="flex md:justify-between ">
                 <img
                   src="/kaliswari.png"
                   alt=""
-                  className="md:w-14 md:h-14 w-12 h-12 "
+                  className="md:w-14 md:h-14 w-10 h-10 "
                 />
-                <h1 className="md:text-2xl text-[17px] text-main font-bold text-main md:mr-56">
+                <h1 className="md:text-[1.4rem] text-[15px] w-50 md:w-fit md:px-1 px-2 text-main font-bold text-main md:mr-56">
                   Bachelor of Computer Applications (BCA)
                 </h1>
-                <p className="text-sm  text-gray-700 mt-2 md:mr-2 md:text-right">
+                <p className="md:text-sm  text-[12px] text-gray-700 mt-2 md:mr-2 md:text-right">
                   2020 – 2023
                 </p>
               </div>
               <div className="flex md:justify-between md:mb-10">
-                <p className="text-gray-700 md:ml-20 text-center ml-5">
+                <p className="text-gray-700 md:ml-20 text-center md:w-fit w-47 ml-5 ">
                   Sri Kaliswari College, Sivakasi
                 </p>
-                <p className="text-green-500 font-bold text-center p-1 ml-3 px-5 md:ml-20  bg-green-100 rounded-2xl shadow-emerald-500 ">
+                <p className="text-green-500 px-1 md:text-[16px] h-7 text-[12px] font-bold text-center  p-1 md:px-4 ml-2 md:ml-20  bg-green-100 rounded-2xl shadow-emerald-500 ">
                   Grade: 70%
                 </p>
               </div>

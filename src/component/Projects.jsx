@@ -77,17 +77,17 @@ export default function Projects() {
 
   const fadeUp = {
     hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, transition: { duration: 1 } },
+    show: { opacity: 1, y: 0, transition: { duration: 2.5 } },
   };
 
   return (
     <section id="project" className="flex md:justify-start justify-center">
       <div className="flex flex-col">
-        <h1 className="text-2xl font-bold mb-4 font-head text-center mt-28">
+        <h1 className="text-2xl font-bold mb-4 font-head text-center mt-36">
           Projects
         </h1>
 
-        <div className="flex flex-col flex-wrap md:flex-row gap-10 xl:w-[80rem] lg:w-[80rem] sm:w-[60rem] w-[22.5rem] mt-10 justify-center">
+        <div className="flex flex-col flex-wrap md:flex-row gap-10 xl:w-[80rem] lg:w-[80rem] sm:w-[60rem] w-[22.5rem] mt-16 justify-center">
           {projectData.map((project, index) => (
             <motion.div
               key={project.id}
