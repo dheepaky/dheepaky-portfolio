@@ -24,12 +24,12 @@ const projectData = [
         <FaDocker className="h-5 w-5 text-black" />
       </span>
     ),
-    image: "/project/portfolio.jpg",
+    image: "/project/portfolio.png",
     gif: "/project/portfolio.gif",
     description: "A Portfolio webApp is modern website simple portfolio.",
     date: "1 week",
-    link: "https://dheepaky-portfolio.vercel.app/",
-    link2: "https://github.com/dheepaky/dheepaky-portfolio",
+    link: "https://github.com/dheepaky/dheepaky-portfolio",
+    link2: "https://dheepaky-portfolio.vercel.app/",
   },
   {
     id: 2,
@@ -48,8 +48,8 @@ const projectData = [
     description:
       "A VConnect Social Media forum mern stack project for communities to share and discuss topics.",
     date: "6 months",
-    link: "https://vconnect-socialmedia-forum.koyeb.app/",
-    link2: "https://github.com/dheepaky/Vconnect-Socialmedia-Forum",
+    link: "https://github.com/dheepaky/Vconnect-Socialmedia-Forum",
+    link2: "https://vconnect-socialmedia-forum.koyeb.app/",
   },
   {
     id: 3,
@@ -68,8 +68,8 @@ const projectData = [
     description:
       "An ecommerce site shopping cart with product listings, categories product and cart.",
     date: "3 months",
-    link: " ",
-    link2: "https://github.com/dheepaky/fancyjewels-ecommerce",
+    link: "https://github.com/dheepaky/fancyjewels-ecommerce",
+    link2: " ",
   },
 ];
 
