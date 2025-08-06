@@ -16,22 +16,20 @@ import { FaDocker } from "react-icons/fa";
 const projectData = [
   {
     id: 1,
-    title: "Fullstack Ecommerce WebApp",
+    title: "Portfolio webApp",
     tech: (
       <span className="flex  justify-center p-3 gap-3">
-        <FaHtml5 className="h-5 w-5 text-black" />
-        <FaCss3Alt className="h-5 w-5 text-black" />
-        <TbBrandJavascript className="h-5 w-5 text-black" />
-        <FaPhp className="h-5 w-5 text-black" />
-        <GrMysql className="h-5 w-5 text-black" />
+        <FaReact className="h-5 w-5 text-black" />
+        <RiTailwindCssFill className="h-5 w-5 text-black" />
+        <FaDocker className="h-5 w-5 text-black" />
       </span>
     ),
-    image: "/project/ecommerce.png",
-    gif: "/project/Ecommerce.gif",
-    description:
-      "An ecommerce site shopping cart with product listings, categories product and cart.",
-    date: "Jan 2024 - Feb 2024",
-    link: "https://ecommerce-project-link.com",
+    image: "/project/portfolio.jpg",
+    gif: "/project/portfolio.gif",
+    description: "A Portfolio webApp is modern website simple portfolio.",
+    date: "1 week",
+    link: "https://dheepaky-portfolio.vercel.app/",
+    link2: "https://github.com/dheepaky/dheepaky-portfolio",
   },
   {
     id: 2,
@@ -46,27 +44,32 @@ const projectData = [
       </span>
     ),
     image: "/project/forum.png",
-    gif: "/project/Forum.gif",
+    gif: "/project/mern.gif",
     description:
       "A VConnect Social Media forum mern stack project for communities to share and discuss topics.",
-    date: "Jan 2024 - Feb 2024",
-    link: "https://ecommerce-project-link.com",
+    date: "6 months",
+    link: "https://vconnect-socialmedia-forum.koyeb.app/",
+    link2: "https://github.com/dheepaky/Vconnect-Socialmedia-Forum",
   },
   {
     id: 3,
-    title: "Portfolio webApp",
+    title: "Fullstack Ecommerce WebApp",
     tech: (
       <span className="flex  justify-center p-3 gap-3">
-        <FaReact className="h-5 w-5 text-black" />
-        <RiTailwindCssFill className="h-5 w-5 text-black" />
-        <FaDocker className="h-5 w-5 text-black" />
+        <FaHtml5 className="h-5 w-5 text-black" />
+        <FaCss3Alt className="h-5 w-5 text-black" />
+        <TbBrandJavascript className="h-5 w-5 text-black" />
+        <FaPhp className="h-5 w-5 text-black" />
+        <GrMysql className="h-5 w-5 text-black" />
       </span>
     ),
-    image: "/project/portfolio.jpg",
-    gif: "/project/portfolio.gif",
-    description: "A Portfolio webApp is modern website simple portfolio.",
-    date: "Feb 2024 - Mar 2024",
-    link: "https://forum-project-link.com",
+    image: "/project/ecommerce.png",
+    gif: "/project/Ecommerce.gif",
+    description:
+      "An ecommerce site shopping cart with product listings, categories product and cart.",
+    date: "3 months",
+    link: " ",
+    link2: "https://github.com/dheepaky/fancyjewels-ecommerce",
   },
 ];
 
@@ -76,28 +79,28 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const fadeUp = {
-    hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, transition: { duration: 2.5 } },
+    hidden: { opacity: 0, y: 10 },
+    show: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
   return (
     <section id="project" className="flex md:justify-start justify-center">
       <div className="flex flex-col">
-        <h1 className="text-2xl font-bold mb-4 font-head text-center mt-36">
+        <h1 className="text-2xl fade font-bold mb-4 font-head text-center ">
           Projects
         </h1>
 
-        <div className="flex flex-col flex-wrap md:flex-row gap-10 xl:w-[80rem] lg:w-[80rem] sm:w-[60rem] w-[22.5rem] mt-16 justify-center">
+        <div className="flex flex-col flex-wrap   md:flex-row gap-10 xl:w-[80rem] lg:w-[80rem] sm:w-[60rem] w-[22.5rem] mt-7 justify-center">
           {projectData.map((project, index) => (
-            <motion.div
-              key={project.id}
-              ref={ref}
-              variants={fadeUp}
-              initial="hidden"
-              animate={isInView ? "show" : "hidden"}>
-              <div
-                className="shadows cursor-pointer"
-                onClick={() => setSelectedProject(project)}>
+            <div
+              className="shadows scrollreveal cursor-pointer"
+              onClick={() => setSelectedProject(project)}>
+              <motion.div
+                key={project.id}
+                ref={ref}
+                variants={fadeUp}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}>
                 <img
                   src={project.image}
                   alt={project.title}
@@ -105,10 +108,11 @@ export default function Projects() {
                 />
                 <div className="bg-gray-300 text-center">
                   <p className="text-main">{project.title}</p>
+                  {/* <p className="text-main">{project.date}</p> */}
                   <p className="text-gray-200">{project.tech}</p>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           ))}
         </div>
       </div>

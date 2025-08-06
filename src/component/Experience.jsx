@@ -10,7 +10,7 @@ export default function Experience() {
   };
   return (
     <section id="education" className="mt-56 px-2  ">
-      <h2 className="text-2xl font-bold mb-2.5 font-head text-center ">
+      <h2 className="text-2xl fade font-bold mb-2.5 font-head text-center ">
         Experience
       </h2>
       <div className="relative mx-auto md:max-w-2xl md:px-4 py-14 ">
@@ -24,7 +24,7 @@ export default function Experience() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://drive.google.com/file/d/1RgftFoq8uEc7E62soArjLzox6F1Xu4Rd/view">
-            <div className="rounded-2xl bg-gray-200 p-2 shadows">
+            <div className="rounded-2xl bg-gray-200 p-2 shadows scrollreveal">
               <div className="flex md:justify-between ">
                 <img
                   src="/edu/gkcreation.png"

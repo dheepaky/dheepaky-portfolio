@@ -3,7 +3,7 @@ export default function Hero() {
   return (
     <section
       id="about"
-      className=" flex flex-col text-main md:flex-row items-center justify-center px-4 md:px-10">
+      className=" flex flex-col text-main md:flex-row items-center mb-28 justify-center px-4 md:px-10">
       {/* Left Side */}
       <div className="w-full md:w-1/2 text-center md:text-left  md:ml-36">
         <ul className="mt-5 py-1 flex items-center justify-center md:justify-start">

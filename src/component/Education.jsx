@@ -18,7 +18,7 @@ export default function Education() {
   };
   return (
     <section id="education" className="mt-56 px-2  ">
-      <h2 className="text-2xl font-bold mb-1 font-head text-center ">
+      <h2 className="text-2xl fade font-bold mb-7 font-head text-center ">
         Education
       </h2>
       <div className="relative mx-auto md:max-w-4xl md:px-4 py-7 ">
@@ -34,7 +34,7 @@ export default function Education() {
             variants={fadeUp}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}>
-            <div className="rounded-2xl bg-gray-200 p-2">
+            <div className="rounded-2xl bg-gray-200 p-2 scrollreveal">
               <div className="flex md:justify-between ">
                 <img
                   src="/vhnsnc.png"
@@ -76,7 +76,7 @@ export default function Education() {
             variants={fadeUp}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}>
-            <div className="rounded-2xl bg-gray-200 p-2">
+            <div className="rounded-2xl bg-gray-200 p-2 scrollreveal">
               <div className="flex md:justify-between ">
                 <img
                   src="/kaliswari.png"
@@ -107,7 +107,7 @@ export default function Education() {
 
       {/*  */}
       {/* languages & Tools */}
-      <h2 className="text-2xl font-bold mb-4 font-head text-center py-10">
+      <h2 className="text-2xl fade font-bold mb-5 mt-5 font-head text-center py-10">
         Languages & Tools
       </h2>
       <motion.div
@@ -115,7 +115,7 @@ export default function Education() {
         variants={fadeUp3}
         initial="hidden"
         animate={isInView ? "show" : "hidden"}>
-        <div className="flex flex-wrap ml-4 gap-4 md:gap-6 py-5 justify-center mx-auto">
+        <div className="flex flex-wrap ml-4 gap-4  scrollreveal md:gap-6 py-5 justify-center mx-auto">
           <img src="/icon/html.svg" alt="HTML" className="w-12 h-12" />
           <img src="/icon/css.svg" alt="CSS" className="w-12 h-12" />
           <img src="/icon/js.svg" alt="JavaScript" className="w-12 h-12" />

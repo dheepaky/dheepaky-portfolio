@@ -5,15 +5,15 @@ export default function Certification() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 10 },
     show: { opacity: 1, y: 0, transition: { duration: 0.7 } },
   };
   const fadeUp2 = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+    hidden: { opacity: 0, y: 10 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
   const fadeUp3 = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 10 },
     show: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
@@ -23,14 +23,14 @@ export default function Certification() {
         <h2 className="text-2xl font-bold mb-4 font-head text-center py-10">
           Certification
         </h2>
-        <div className="flex md:flex-row flex-col flex-wrap items-center  gap-10">
+        <div className="flex md:flex-row flex-col flex-wrap  items-center  gap-10">
           {/* 1 */}
           <motion.div
             ref={ref}
             variants={fadeUp}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}>
-            <div className="w-[20rem] shadows border-2 ">
+            <div className="w-[20rem] shadows border-2 scrollreveal">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,7 +64,7 @@ export default function Certification() {
             variants={fadeUp2}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}>
-            <div className="w-[20rem] shadows border-2 ">
+            <div className="w-[20rem] shadows border-2 scrollreveal">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,7 +96,7 @@ export default function Certification() {
             variants={fadeUp3}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}>
-            <div className="w-[20rem] shadows border-2 ">
+            <div className="w-[20rem] shadows border-2 scrollreveal">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
