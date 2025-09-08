@@ -47,6 +47,6 @@ npm run build
 # Preview production build
 npm run preview
 
-
+---
 
 <p align="center"> <img src="/public/project/portfolio.png" alt="Portfolio Screenshot" width="700" /> </p>
