@@ -76,6 +76,6 @@ Dheepaky
 
 GitHub: @dheepaky
 
-Portfolio: dheepaky-portfolio.vercel.app
+Portfolio: [dheepaky-portfolio.vercel.app](https://dheepaky-portfolio.vercel.app)
 
 LinkedIn: (Add your LinkedIn link here)
