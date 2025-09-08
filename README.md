@@ -44,11 +44,5 @@ npm run dev
 # Build for production
 npm run build
 
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=dheepaky&locale=en&mode=daily&theme=rose_pine&hide_border=false&border_radius=7&order=10" height="450" alt="streak graph"  />
-</div>
-
-
 # Preview production build
 npm run preview
