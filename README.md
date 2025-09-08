@@ -29,8 +29,6 @@ This site highlights skills, projects, and achievements with a clean and respons
 ---
 
 
----
-
 ## ⚡ Quick Start
 
 ```bash
@@ -52,7 +50,7 @@ npm run preview
 
 ---
 
-## 📂 Sections
+# 📂 Sections
 
 🏠 Home – Intro and personal branding
 
@@ -66,13 +64,13 @@ npm run preview
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-(Add screenshots or GIFs of your portfolio UI here)
+
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 Dheepaky
 
