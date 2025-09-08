@@ -50,7 +50,7 @@ npm run preview
 
 ---
 
- 📂 Sections
+## 📂 Sections
 
 🏠 Home – Intro and personal branding
 
@@ -64,13 +64,13 @@ npm run preview
 
 ---
 
- 📸 Screenshots
+## 📸 Screenshots
 
 <p align="center"> <img src="/public/project/portfolio.png" alt="Portfolio Screenshot" width="600" /> </p>
 
 ---
 
- 👨‍💻 Author
+## 👨‍💻 Author
 
 Dheepaky
 
