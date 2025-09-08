@@ -66,8 +66,9 @@ npm run preview
 
 # 📸 Screenshots
 
+<div align="center">
 <img src="public/portfolio.gif" width="45" height="45" autoplay "/>
-
+<div>
 ---
 
 # 👨‍💻 Author
