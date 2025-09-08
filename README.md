@@ -28,7 +28,6 @@ This site highlights skills, projects, and achievements with a clean and respons
 
 ---
 
-
 ## ⚡ Quick Start
 
 ```bash
@@ -47,36 +46,3 @@ npm run build
 
 # Preview production build
 npm run preview
-
----
-
-# 📂 Sections
-
-🏠 Home – Intro and personal branding
-
-📖 About – Who I am & what I do
-
-🛠️ Skills – Technical skillset
-
-📂 Projects – Selected work & case studies
-
-📞 Contact – How to reach me
-
----
-
-# 📸 Screenshots
-
-<div align="center">
-<img src ="/public/project/portfolio.png">
-<div>
----
-
-# 👨‍💻 Author
-
-Dheepaky
-
-GitHub: @dheepaky
-
-Portfolio: dheepaky-portfolio.vercel.app
-
-LinkedIn: (Add your LinkedIn link here)
