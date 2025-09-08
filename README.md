@@ -66,7 +66,7 @@ npm run preview
 
 # 📸 Screenshots
 
-
+<img src="public/portfolio.gif" width="45" height="45" autoplay "/>
 
 ---
 
